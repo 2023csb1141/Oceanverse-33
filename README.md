@@ -54,3 +54,14 @@ def throw(n) :
 print(throw(30))
                 
   
+#Oceanverse 37
+# Program to make a function which returns true if number n is even and false if not
+
+n= eval(input("Enter a number to know if its even- "))
+def is_even(n) :
+    if n%2==0 :
+        return(True)
+    else :
+        return(False)
+print(is_even(n))
+
