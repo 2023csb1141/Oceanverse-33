@@ -37,7 +37,7 @@ def throw(n) :
   return(l)
 print(throw(10))
 
-#Oceanverse37
+#Oceanverse-37
 # Program to make function which simulates the throwing of n balls in n identical bins till all bins are empty
 import random
 def throw(n) :
@@ -54,7 +54,7 @@ def throw(n) :
 print(throw(30))
                 
   
-#Oceanverse 37
+#Oceanverse-38
 # Program to make a function which returns true if number n is even and false if not
 
 n= eval(input("Enter a number to know if its even- "))
@@ -65,3 +65,12 @@ def is_even(n) :
         return(False)
 print(is_even(n))
 
+#Oceanverse-39
+# Program to make a function to take radius of a circle and return its area
+
+k= eval(input("Enter the radiu sof the circle- "))
+def circle_area(r) :
+    ar= (22*r*r)/7
+    return(ar)
+print(circle_area(k))
+~                                     
