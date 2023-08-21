@@ -36,4 +36,21 @@ def throw(n) :
     l[random.randint(0,n-1)].append(1)
   return(l)
 print(throw(10))
+
+#Oceanverse37
+# Program to make function which simulates the throwing of n balls in n identical bins till all bins are empty
+import random
+def throw(n) :
+    l=[]
+    for i in range(n) :
+        l.append([])
+    j=0
+    while j<len(l)-1 :
+        if l[j]==[] :
+            l[random.randint(0,n-1)].append(1)
+        else :
+            j+=1
+    return(l)
+print(throw(30))
+                
   
