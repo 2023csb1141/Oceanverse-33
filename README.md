@@ -89,3 +89,12 @@ def spiral(n) :
 spiral(10)
 
 
+#Oceanverse-41
+# Program to make a function that takes two strings and concatenates them with a space in between
+
+def concatenate(a,b) :
+    return(a+" "+b)
+
+print(concatenate("Hello","World"))
+~                                                                                                                                                                                                           
+~                                         
