@@ -73,4 +73,19 @@ def circle_area(r) :
     ar= (22*r*r)/7
     return(ar)
 print(circle_area(k))
-~                                     
+
+#Oceanverse-40
+# Program to print a spiral
+
+def spiral(n) :
+    for i in range(n+1) :
+        if i%2!=0 :
+            print("R"*i, end="")
+            print("U"*i, end="")
+        if i%2==0 :
+            print("L"*i, end="")
+            print("D"*i, end="")
+
+spiral(10)
+
+
