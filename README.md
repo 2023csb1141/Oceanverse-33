@@ -96,5 +96,22 @@ def concatenate(a,b) :
     return(a+" "+b)
 
 print(concatenate("Hello","World"))
-~                                                                                                                                                                                                           
-~                                         
+
+                                                                                                                                                                                      
+#Oceanverse-42
+# Program to make a function that takes a list of numbers and finds the maximum of them
+
+import random
+l=[]
+for i in range(20) :
+    l.append(random.randint(1,40))
+print(l)
+
+def find_max(l) :
+    k=l[0]
+    for i in range(1,len(l)-1) :
+        if l[i]>k :
+            k=l[i]
+    return(k)
+
+print(find_max(l))
