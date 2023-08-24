@@ -75,18 +75,24 @@ def circle_area(r) :
 print(circle_area(k))
 
 #Oceanverse-40
-# Program to print a spiral
+# Program to define a function that displays the spiral: RULLDDRRRUUULLLL… and so on. It should keep displaying until it has displayed 1,000,000 Letters in this pattern
 
-def spiral(n) :
-    for i in range(n+1) :
-        if i%2!=0 :
-            print("R"*i, end="")
-            print("U"*i, end="")
-        if i%2==0 :
-            print("L"*i, end="")
-            print("D"*i, end="")
+def spiral(n) :                # Defining a function called spiral
+    i=1
+    z=""                       # Defining an empty string which will hold our spiral direction values
+    a=len(z)                   # Defining a variable which will be the length of our string
+    while a<n :                # Setting a while loop to keep adding direction values to our string till it has reached its limit of just greater than n letters
+        if i%2!=0 :            # Putting condition to add R, U in every alternate loop
+            z=z+("R"*i)
+            z=z+("U"*i)
+        if i%2==0 :            # Putting condition to add L, D in every alternate loop
+            z=z+("L"*i)
+            z=z+("D"*i) 
+        a=len(z)               # Changing the value of a to the new length of string z in each iteration
+        i+=1                   # Incrementing value of i (which runs our loop) in every iteration 
+    return(z[:n])              # Returning the string with all values of the direction in our spiral upto n letters only
 
-spiral(10)
+print(spiral(1000000))         # Printing our spiral upto 1 million letters
 
 
 #Oceanverse-41
