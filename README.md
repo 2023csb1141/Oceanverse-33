@@ -34,7 +34,11 @@ def throw(n) :
     l.append([])
   for i in range(n) :
     l[random.randint(0,n-1)].append(1)
-  return(l)
+  a=0
+  for i in range(len(l)) :
+  if len(l[i])>a :
+    a= len(l[i])
+  return(l,a)
 print(throw(10))
 
 #Oceanverse-37
